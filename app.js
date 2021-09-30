@@ -50,7 +50,7 @@ var warriors = [
 ];
 for(var i=0; i<warriors.length; i++) {
 
-   // var ele = document.createElement("div");
+    // var ele = document.createElement("div");
     var nameyay = document.createElement("h1");
     var healthyay = document.createElement("h2");
     var damageyay = document.createElement("h3");
@@ -61,15 +61,18 @@ for(var i=0; i<warriors.length; i++) {
     nameyay.innerHTML = "Name:" + warriors[i].name;
 
 
-    if (warriors[i].health >= 10 && warriors[i].damage >= 2 && warriors[i].warrior ===true) {
+    if (warriors[i].health >= 10 && warriors[i].damage >= 2 && warriors[i].warrior === true) {
+
         yay.appendChild(nameyay);
         yay.appendChild(healthyay);
         yay.appendChild(damageyay);
     }
-     else if (warriors[i].name.includes('A') || warriors[i].name.includes('a')) {
-        //warriors[i].nameyay.fontcolor("red")
+    if (warriors[i].name.includes('A') || warriors[i].name.includes('a')) {
         nameyay.style.color = "red";
     };
 }
+
+
+
 
 
